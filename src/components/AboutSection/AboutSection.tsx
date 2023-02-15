@@ -1,8 +1,6 @@
-import styles from "./AboutSection.module.scss";
-
 const AboutSection = () => {
   return (
-    <section className={styles.section}>
+    <section>
       <h1>About Me</h1>
       <p>
         I'm a fresh graduate web developer based in Metro Manila, Philippines. I

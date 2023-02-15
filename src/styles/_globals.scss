@@ -51,10 +51,11 @@ svg {
 
 main {
   padding: 1.5rem 1rem 5.25rem;
+
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 
 section {
@@ -63,6 +64,10 @@ section {
 
   margin: auto;
   padding: 0.5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 
 hr {

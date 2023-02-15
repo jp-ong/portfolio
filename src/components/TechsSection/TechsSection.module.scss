@@ -1,0 +1,36 @@
+div.techs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  gap: 0.5rem;
+}
+
+div.tech {
+  width: min-content;
+  justify-self: center;
+  transition: 125ms transform ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+div.icon {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  padding-bottom: 0.5rem;
+
+  background: var(--c-light-1);
+  border-radius: 5px;
+  overflow: hidden;
+
+  & > img {
+    object-fit: contain;
+    padding: 0.25rem;
+  }
+}
+
+div.label {
+  width: 100%;
+  font-size: 0.875rem;
+}
