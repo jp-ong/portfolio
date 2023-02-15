@@ -30,8 +30,18 @@ div.info {
   gap: 0.5rem;
 }
 
-a.title {
-  color: var(--c-blue-1);
-  font-weight: 600;
-  text-decoration: underline;
+div.title {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 1rem;
+
+  span {
+    color: var(--c-light-3);
+  }
+
+  a {
+    color: var(--c-blue-1);
+    font-weight: 600;
+    text-decoration: underline;
+  }
 }

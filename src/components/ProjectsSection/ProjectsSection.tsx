@@ -63,8 +63,8 @@ const ProjectsSection = () => {
   return (
     <section>
       <h1>Projects</h1>
-      {projects.map((project) => (
-        <Project {...project} key={project.repo} />
+      {projects.map((project, i) => (
+        <Project {...project} key={project.repo} id={i + 1} />
       ))}
     </section>
   );
@@ -74,9 +74,10 @@ type ProjectProps = {
   repo: string;
   title: string;
   description: string[];
+  id: number;
 };
 
-const Project: React.FC<ProjectProps> = ({ repo, title, description }) => {
+const Project: React.FC<ProjectProps> = ({ id, repo, title, description }) => {
   return (
     <div className={styles.project}>
       <Link
@@ -87,13 +88,12 @@ const Project: React.FC<ProjectProps> = ({ repo, title, description }) => {
         <Image src={`/assets/projects/${repo}.jpg`} alt={title} fill />
       </Link>
       <div className={styles.info}>
-        <Link
-          href={`https://github.com/jp-ong/${repo}`}
-          className={styles.title}
-          target="_blank"
-        >
-          {title}
-        </Link>
+        <div className={styles.title}>
+          <span>{id}.</span>
+          <Link href={`https://github.com/jp-ong/${repo}`} target="_blank">
+            {title}
+          </Link>
+        </div>
         {description.map((d, i) => (
           <p className={styles.description} key={i}>
             {d}
