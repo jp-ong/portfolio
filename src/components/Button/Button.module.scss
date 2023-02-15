@@ -16,6 +16,9 @@ a.button {
 
   cursor: pointer;
 
+  transition: 125ms ease-in-out;
+  transition-property: background, color, border;
+
   & > span {
     white-space: nowrap;
     font-size: 0.875rem;
@@ -37,5 +40,11 @@ a.button {
     background: var(--c-dark-3);
     color: var(--c-light-1);
     border: solid 1px var(--c-dark-1);
+  }
+
+  &:active {
+    background: var(--c-dark-2);
+    color: var(--c-light-1);
+    border: solid 1px var(--c-light-3);
   }
 }

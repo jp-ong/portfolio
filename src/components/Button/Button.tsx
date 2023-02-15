@@ -26,7 +26,13 @@ const Button: React.FC<Props> = ({
     .filter((c) => c)
     .join(" ");
   return href ? (
-    <Link href={href} className={classes} download={download}>
+    <Link
+      href={href}
+      className={classes}
+      download={download}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {icon}
       <span>{label}</span>
     </Link>

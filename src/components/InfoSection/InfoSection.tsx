@@ -58,11 +58,18 @@ const InfoSection = () => {
               icon={<LinkedInIcon />}
               label="LinkedIn"
               variant="secondary"
+              href="https://www.linkedin.com/in/johnpaulong/"
               maxWidth
             />
           </div>
           <div>
-            <Button label="Download My Resume" variant="primary" maxWidth />
+            <Button
+              label="Download My Resume"
+              variant="primary"
+              maxWidth
+              href="/assets/Ong_JohnPaul.pdf"
+              download
+            />
           </div>
         </div>
       </div>

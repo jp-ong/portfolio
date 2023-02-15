@@ -5,7 +5,7 @@ section.section {
   padding: 0.5rem;
   display: flex;
   flex-flow: column nowrap;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 h1.greeting {
@@ -36,7 +36,7 @@ div.image {
 div.panel {
   display: flex;
   flex-flow: column nowrap;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 div.contacts {
