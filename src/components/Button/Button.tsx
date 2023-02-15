@@ -7,9 +7,17 @@ type Props = {
   maxWidth?: boolean;
   variant?: "primary" | "secondary";
   href?: string;
+  download?: boolean;
 };
 
-const Button: React.FC<Props> = ({ icon, label, maxWidth, variant, href }) => {
+const Button: React.FC<Props> = ({
+  icon,
+  label,
+  maxWidth,
+  variant,
+  href,
+  download,
+}) => {
   const classes = [
     styles.button,
     maxWidth && styles.maxWidth,
@@ -18,7 +26,7 @@ const Button: React.FC<Props> = ({ icon, label, maxWidth, variant, href }) => {
     .filter((c) => c)
     .join(" ");
   return href ? (
-    <Link href={href} className={classes}>
+    <Link href={href} className={classes} download={download}>
       {icon}
       <span>{label}</span>
     </Link>
