@@ -1,8 +1,4 @@
 section.section {
-  width: 100%;
-  max-width: 70ch;
-  margin: auto;
-  padding: 0.5rem;
   display: flex;
   flex-flow: column nowrap;
   gap: 1.25rem;
@@ -12,9 +8,11 @@ h1.greeting {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5rem;
+
   & > span {
     align-self: center;
     white-space: nowrap;
+    font-size: 1rem;
   }
 }
 
@@ -22,10 +20,12 @@ div.image {
   position: relative;
   width: 10rem;
   height: 10rem;
+
   align-self: center;
 
   border: solid 4px var(--c-dark-2);
   border-radius: 100%;
+
   overflow: hidden;
 
   & > img {
@@ -43,6 +43,7 @@ div.contacts {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5rem;
+
   font-size: 0.875rem;
 
   & > div {
@@ -61,6 +62,7 @@ div.links {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5rem;
+
   div {
     display: flex;
     gap: 0.5rem;

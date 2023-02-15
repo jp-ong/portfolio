@@ -11,7 +11,7 @@ small {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--c-light-1);
   text-shadow: 2px 2px var(--c-dark-2);
@@ -28,6 +28,10 @@ h1,
 h2,
 small {
   line-height: 100%;
+}
+
+p {
+  font-size: 0.875rem;
 }
 
 button {
