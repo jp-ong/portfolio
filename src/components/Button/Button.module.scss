@@ -1,0 +1,41 @@
+button.button,
+a.button {
+  width: min-content;
+  height: 2.25rem;
+  padding: 0 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  background: var(--c-none);
+  color: var(--c-light-1);
+  border: solid 1px var(--c-none);
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  & > span {
+    white-space: nowrap;
+    font-size: 0.875rem;
+  }
+
+  &.maxWidth {
+    width: 100%;
+  }
+
+  &.primary {
+    background: var(--c-light-2);
+    color: var(--c-dark-3);
+    border: solid 1px var(--c-light-2);
+    & > span {
+      font-weight: 600;
+    }
+  }
+  &.secondary {
+    background: var(--c-dark-3);
+    color: var(--c-light-1);
+    border: solid 1px var(--c-dark-1);
+  }
+}

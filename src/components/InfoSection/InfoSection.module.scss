@@ -1,0 +1,68 @@
+section.section {
+  width: 100%;
+  max-width: 70ch;
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+h1.greeting {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  & > span {
+    align-self: center;
+    white-space: nowrap;
+  }
+}
+
+div.image {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  align-self: center;
+
+  border: solid 4px var(--c-dark-2);
+  border-radius: 100%;
+  overflow: hidden;
+
+  & > img {
+    object-fit: cover;
+  }
+}
+
+div.panel {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.25rem;
+}
+
+div.contacts {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+
+  & > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.875rem;
+
+    svg {
+      color: var(--c-light-3);
+    }
+  }
+}
+
+div.links {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  div {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
