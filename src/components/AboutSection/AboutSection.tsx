@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section>
+    <section id="about">
       <h1>About Me</h1>
       <p>
         I'm a fresh graduate in Information Technology based in Metro Manila,

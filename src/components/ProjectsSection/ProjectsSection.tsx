@@ -61,7 +61,7 @@ const ProjectsSection = () => {
     },
   ];
   return (
-    <section>
+    <section id="projects">
       <h1>Projects</h1>
       {projects.map((project, i) => (
         <Project {...project} key={project.repo} id={i + 1} />

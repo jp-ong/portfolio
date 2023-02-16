@@ -20,7 +20,7 @@ const TechsSection = () => {
     { label: "Figma", src: "figma" },
   ];
   return (
-    <section>
+    <section id="techs">
       <h1>Tech Stack</h1>
       <div className={styles.techs}>
         {techs.map((tech) => (
