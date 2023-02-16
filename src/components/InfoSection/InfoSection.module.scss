@@ -63,3 +63,24 @@ div.links {
     gap: 0.5rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  section.section {
+    flex-flow: row nowrap;
+  }
+
+  div.panel {
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+  }
+
+  div.image {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  div.contacts {
+    font-size: 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 div.project {
   padding: 0.5rem;
 
-  border: solid 1px var(--c-dark-2);
+  border: solid 1px var(--c-dark-1);
   border-radius: 5px;
 
   display: flex;
@@ -43,5 +43,11 @@ div.title {
     color: var(--c-blue-1);
     font-weight: 600;
     text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div.title {
+    font-size: 1.25rem;
   }
 }

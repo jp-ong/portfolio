@@ -45,6 +45,17 @@ a.button {
   &:active {
     background: var(--c-dark-2);
     color: var(--c-light-1);
-    border: solid 1px var(--c-light-3);
+    border: solid 1px var(--c-dark-2);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  button.button,
+  a.button {
+    &:hover {
+      background: var(--c-dark-2);
+      color: var(--c-light-1);
+      border: solid 1px var(--c-dark-2);
+    }
   }
 }

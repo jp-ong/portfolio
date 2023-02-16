@@ -38,3 +38,21 @@ button {
   font-size: 1rem;
   font-family: Poppins, sans-serif;
 }
+
+@media screen and (min-width: 1024px) {
+  small {
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+}

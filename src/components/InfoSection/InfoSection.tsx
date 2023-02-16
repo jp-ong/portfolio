@@ -9,7 +9,7 @@ import { LinkedInIcon } from "../icons/LinkedInIcon";
 
 const InfoSection = () => {
   return (
-    <section id="info">
+    <section className={styles.section} id="info">
       <div className={styles.panel}>
         <h1 className={styles.greeting}>
           <small>Hello, I'm</small>
