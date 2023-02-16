@@ -12,7 +12,7 @@ const InfoSection = () => {
     <section className={styles.section} id="info">
       <div className={styles.panel}>
         <h1 className={styles.greeting}>
-          <small>Hello, I'm</small>
+          <small>Hello, I&apos;m</small>
           <span>JOHN PAUL ONG</span>
         </h1>
         <div className={styles.image}>
