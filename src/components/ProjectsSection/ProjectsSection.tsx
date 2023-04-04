@@ -28,37 +28,6 @@ const ProjectsSection = () => {
         "This was my first hobby project built while learning NextJS, leveraging its server-side rendering capabilities, and MaterialUI for theming.",
       ],
     },
-    {
-      repo: "override-syntax",
-      title: "Override Syntax Storefront",
-      description: [
-        "Override Syntax is an mock e-commerce storefront built as an academic project which includes creating a user account and ordering fictitious items.",
-        "While it does not include a Payment System, it was built using the MERN stack (Mongoose, Express, React + Redux, Node) and it is integrated with 3 other systems — Syntax Inventory System, Syntax API Server, and an Order Management System built by my groupmate.",
-      ],
-    },
-    {
-      repo: "syntax-inventory",
-      title: "Syntax Inventory System",
-      description: [
-        "A simple inventory and content management system that uses plain HTML5, CSS3, and JavaScript built as an academic project. This system serves exclusively as a subsystem to my mock e-commerce 'Override Syntax Storefront' system. This system enables an administrator of said mock e-commerce to modify a fictitious inventory, including its stocks, prices, and information.",
-      ],
-    },
-    {
-      repo: "syntax-api-server",
-      title: "Syntax API Server",
-      description: [
-        "Syntax API Server is a system built as an academic project that is meant to be a Headless API for my other systems such as 'Override Syntax Storefront' and 'Syntax Inventory System' to connect to.",
-        "It is built with NodeJS and ExpressJS, and MongoDB for its database. It includes implementations of REST API, token-based authentication, encryption of credentials, CRUD operations, and practice of using proper HTTP response codes.",
-      ],
-    },
-    {
-      repo: "covid-stats-global",
-      title: "COVID-19 Statistics Global",
-      description: [
-        "This website displays COVID-19 statistics provided by JHU COVID19 MongoDB Atlas and allows users to view statistics globally or locally.",
-        "This was one of my first hobby projects built while learning the MERN stack — MongoDB, ExpressJS, ReactJS + ReduxJS, and NodeJS.",
-      ],
-    },
   ];
   return (
     <section id="projects">
